@@ -31,7 +31,7 @@ self.addEventListener("fetch", async function (event) {
 })
 
 async function cachefirst(req) {
-    return await caches.match(req) || await caches.match(fullback.json)
+    return await caches.match(req) || await caches.match("fullback.json")
 }
 
 async function networkfirst() {
