@@ -1,0 +1,169 @@
+/*************** Fonts *********************/
+
+@font-face {
+    font-family: nunito;
+    src: url(../fonts/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Muli;
+    src: url(../fonts/Muli-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(../fonts/Heebo-VariableFont_wght.ttf);
+}
+
+
+/************ mixin ******************/
+
+@mixin scaleXMe($x) {
+    -webkit-transform: scaleX($x);
+    -moz-transform: scaleX($x);
+    -ms-transform: scaleX($x);
+    -o-transform: scaleX($x);
+    transform: scaleX($x);
+}
+
+@mixin scaleMe($s) {
+    -webkit-transform: scale($s);
+    -moz-transform: scale($s);
+    -ms-transform: scale($s);
+    -o-transform: scale($s);
+    transform: scale($s);
+}
+
+@mixin rotateMe($r) {
+    -webkit-transform: rotate($r);
+    -moz-transform: rotate($r);
+    -o-transform: rotate($r);
+    transform: rotate($r);
+}
+
+@mixin rotatexMe($rx) {
+    -webkit-transform: rotateX($rx);
+    -moz-transform: rotateX($rx);
+    -o-transform: rotateX($rx);
+    transform: rotateX($rx);
+}
+
+@mixin transOrigin($o) {
+    -webkit-transform-origin: $o;
+    -moz-transform-origin: $o;
+    -o-transform-origin: $o;
+    transform-origin: $o;
+}
+
+@mixin translateMe($g, $g2) {
+    -webkit-transform: translate($g, $g2);
+    -moz-transform: translate($g, $g2);
+    -o-transform: translate($g, $g2);
+    transform: translate($g, $g2);
+}
+
+@mixin translatexMe($x) {
+    -webkit-transform: translateX($x);
+    -moz-transform: translateX($x);
+    -o-transform: translateX($x);
+    transform: translateX($x);
+}
+
+@mixin translateyMe($y) {
+    -webkit-transform: translateY($y);
+    -moz-transform: translateY($y);
+    -o-transform: translateY($y);
+    transform: translateY($y);
+}
+
+@mixin transitionMe($t) {
+    -webkit-transition: $t;
+    -moz-transition: $t;
+    -ms-transition: $t;
+    -o-transition: $t;
+    transition: $t;
+}
+
+@mixin borderdMe($b) {
+    -webkit-border-radius: ($b);
+    -moz-border-radius: ($b);
+    -o-border-radius: ($b);
+    -ms-border-radius: ($b);
+    border-radius: ($b);
+}
+
+/************ mixin ******************/
+
+/************* multi usable classes *****************/
+body {
+    font-family: heebo, Muli, nunito, Tahoma, Arial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Cormorant Garamond", Muli, nunito, Arial, Helvetica, sans-serif;
+    font-weight: 340;
+    text-transform: capitalize;
+    color: #3d4c58;
+    font-weight: 800;
+}
+
+p {
+    font-family: "Montserrat", heboo, muli, sans-serif;
+}
+
+*::selection {
+    background: #000;
+    color: #fff;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.trans {
+    @include transitionMe(all .3s ease-in-out);
+}
+
+$gcolor: #D3A478;
+$hoverColor: #bb8b5f;
+$gDarkColor:#191919;
+$pColor: #787c80;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 415px;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #899198;
+    font-family: "Montserrat", nunito, heebo, sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.section {
+    padding: 6em 0;
+}
+
+/************* multi usable classes *****************/
+
+/*********** imported components ********/
+@import "navbar";
+@import "footer";
+@import "sliders";
+@import "mainStyle";
+@import "responsive-design";

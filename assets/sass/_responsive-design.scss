@@ -1,0 +1,54 @@
+@media (max-width: $breakpoint-mobile) {
+    .welcome-section .welcome-col-wrap .play-btn {
+        left: 50%;
+    }
+
+    .rooms-wrapper .room .room-info {
+        position: relative;
+    }
+
+    .rooms-wrapper .room .room-img {
+        margin-right: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    .advantages .advantages-wrapper .advantage .adv-info .ser-info {
+        padding: 40px 15px;
+
+        div {
+            h3 {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .testimonials .customers-wrap {
+        max-width: 100%;
+        position: relative;
+        transform: none;
+    }
+
+    .testimonials .testimonials-wrapper .rooms-slider-nav {
+        bottom: 0;
+        right: 0;
+        position: relative;
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .advantages {
+        .advantages-wrapper {
+            .advantage {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .testimonials .customers-wrap {
+        max-width: 100%;
+        position: relative;
+        transform: none;
+    }
+}
