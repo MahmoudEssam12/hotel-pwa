@@ -15,7 +15,7 @@ self.addEventListener("install", async function () {
     console.log("from install")
     let createdcache = await caches.open(cachname);
 
-    await createdcache.add(cachedassests);
+    await createdcache.addAll(cachedassests);
     await self.skipWaiting();
 });
 
