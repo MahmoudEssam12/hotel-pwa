@@ -1,12 +1,14 @@
 let cachname = "static-cache";
 let cachedassests = [
-    "../../index.html",
-    "../../blog.html",
-    "../../rooms.html",
-    "../../services.html",
-    "../../single.html",
-    "../../contact-us.html",
-    "../css/main.css"
+    "./index.html",
+    "./rooms.html",
+    "./services.html",
+    "./single.html",
+    "./contact-us.html",
+    "./blog.html",
+    "./about.html",
+    "./404.html",
+    "./assets/css/main.css"
 ];
 
 self.addEventListener("install", async function () {
