@@ -33,10 +33,10 @@ self.addEventListener("fetch", async function (event) {
 })
 
 async function cachefirst(req) {
-    return await caches.match(req) || await caches.match("fullback.json")
+    return await caches.match(req) || await caches.match("fallback.json")
 }
 
-async function networkfirst() {
+async function networkfirst(req) {
     let dynamiccache = await caches.open("dynamic-cache");
     let resp = await fetch(req);
     await dynamiccache.put(req, resp.clone());
